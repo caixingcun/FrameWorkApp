@@ -1,7 +1,5 @@
 package com.example.frameworkapp.base;
 
-import android.support.v4.app.Fragment;
-
 import com.gyf.barlibrary.ImmersionBar;
 import com.gyf.barlibrary.ImmersionFragment;
 

@@ -1,6 +1,6 @@
 package com.example.frameworkapp.net;
 
-import com.example.frameworkapp.base.BaseRxActivity;
+import com.example.frameworkapp.base.BaseActivity;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
@@ -8,9 +8,9 @@ import io.reactivex.ObservableTransformer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 
 public class ComposeToken<T> implements ObservableTransformer<T, T> {
-    private BaseRxActivity mActivity;
+    private BaseActivity mActivity;
 
-    public ComposeToken(BaseRxActivity activity) {
+    public ComposeToken(BaseActivity activity) {
         mActivity = activity;
     }
 

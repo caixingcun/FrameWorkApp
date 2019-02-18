@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    app:layout_scrollFlags="scroll|snap">
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="30dp"
+            android:src="@mipmap/icon_arrow_left"
+            android:layout_height="30dp"
+            android:id="@+id/iv" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginRight="70dp"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/fl_right"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right">
+
+
+    </FrameLayout>
+
+</androidx.appcompat.widget.Toolbar>

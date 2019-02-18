@@ -19,7 +19,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:name=".global.App"
-        android:theme="@style/AppTheme">
+        android:theme="@style/BaseTheme">
         <!--适配华为（huawei）刘海屏-->
         <meta-data
             android:name="android.notch_support"
@@ -40,7 +40,7 @@
 
         <provider
             android:name=".provider.MyFileProvider"
-            android:authorities="com.softtek.lai.fileProvider"
+            android:authorities="com.example.frameworkapp.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

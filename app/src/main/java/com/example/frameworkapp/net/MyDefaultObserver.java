@@ -1,15 +1,13 @@
 package com.example.frameworkapp.net;
 
-import android.widget.Toast;
 
-import com.example.frameworkapp.base.BaseRxActivity;
+import com.example.frameworkapp.base.BaseActivity;
 import com.example.frameworkapp.bean.BaseResponseBean;
 import com.example.frameworkapp.bean.ResponseBean;
 import com.example.frameworkapp.enmu.ExceptionReason;
 import com.example.frameworkapp.exception.MyException;
 import com.example.frameworkapp.util.LogUtils;
 import com.example.frameworkapp.util.ToastUtil;
-import com.google.gson.Gson;
 import com.google.gson.JsonParseException;
 import com.lzy.okgo.exception.HttpException;
 
@@ -32,8 +30,8 @@ public abstract class MyDefaultObserver<T extends ResponseBean> implements Obser
 
     //  Activity 是否在执行onStop()时取消订阅
     private boolean isAddInStop = false;
-    private BaseRxActivity activity;
-    public MyDefaultObserver(BaseRxActivity activity) {
+    private BaseActivity activity;
+    public MyDefaultObserver(BaseActivity activity) {
         this.activity = activity;
     }
 
