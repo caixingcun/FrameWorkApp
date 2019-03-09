@@ -41,6 +41,9 @@ public class App extends Application {
         isDebug = true;
         initOkGo();
         initX5WebView();
+
+
+
     }
 
     private void initX5WebView() {
