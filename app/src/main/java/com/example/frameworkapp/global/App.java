@@ -87,6 +87,7 @@ public class App extends Application {
         OkGo.getInstance().init(this)
                 .setRetryCount(0)
                 .setOkHttpClient(builder.build());
+        //todo
     }
     private static class TrustAllHostnameVerifier implements HostnameVerifier {
         @Override
