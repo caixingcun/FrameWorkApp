@@ -56,7 +56,9 @@ public class App extends Application {
 
             @Override
             public void onCoreInitFinished() {
-                //todo
+
+
+
             }
         };
         //x5内核初始化接口
